@@ -3,6 +3,7 @@ package services;
 import model.User;
 import repository.UserRepository;
 
+import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Singleton;
 import java.util.List;
@@ -10,12 +11,17 @@ import java.util.List;
 /**
  * Created by jesusbueis1 on 13/11/16.
  */
-@Named
+@Named("userService")
 @Singleton
 public class UserServiceImpl implements UserService{
 
 
     private UserRepository userRepository;
+
+    @Inject()
+    public UserServiceImpl(UserRepository userRepository){
+        this.userRepository = userRepository;
+    }
 
     @Override
     public List<User> getAllUser() {

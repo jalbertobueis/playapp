@@ -5,6 +5,7 @@ import play.mvc.Controller;
 import play.mvc.Result;
 import services.UserService;
 
+import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Singleton;
 
@@ -17,6 +18,11 @@ public class UserController extends Controller {
 
 
     private UserService userService;
+
+    @Inject
+    public UserController(UserService userService){
+        this.userService = userService;
+    }
 
     public Result addUser() {
 
