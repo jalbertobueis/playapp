@@ -9,6 +9,6 @@ public class ServiceModule extends AbstractModule {
 
     @Override
     protected void configure() {
-        bind(UserService.class).to(UserServiceImpl.class);
+        bind(UserService.class).to(UserService.class);
     }
 }
