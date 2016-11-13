@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/jesus-bueis-play -Dhttp.port=${PORT} -Dplay.evolutions.db.default.autoApply=true -Ddb.default.driver=org.postgresql.Driver -Ddb.default.url=postgres://fnmyhmxzcmnilq:xdhjmJlX_oxRet2n9VkQI4PYxB@ec2-50-19-240-113.compute-1.amazonaws.com:5432/dd259etghmv8n3
+web: target/universal/stage/bin/wedding -Dhttp.port=${PORT} -Dplay.evolutions.db.default.autoApply=true -Ddb.default.driver=org.postgresql.Driver -Ddb.default.url=postgres://fnmyhmxzcmnilq:xdhjmJlX_oxRet2n9VkQI4PYxB@ec2-50-19-240-113.compute-1.amazonaws.com:5432/dd259etghmv8n3
